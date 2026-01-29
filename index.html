@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="hr">
 
+
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,6 +18,22 @@
             scroll-behavior: smooth;
         }
     </style>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LegalService",
+            "name": "Odvjetnički ured Krunoslav Aljinović",
+            "url": "https://example.com/",
+            "areaServed": "Split, Croatia",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Split",
+                "addressCountry": "HR"
+            },
+            "telephone": "+385XXXXXXXX",
+            "email": "info@example.com"
+        }
+    </script>
 </head>
 
 <body class="bg-white text-slate-900">
@@ -25,6 +43,7 @@
 
             <nav class="hidden gap-6 text-sm md:flex">
                 <a class="text-slate-700 hover:text-slate-900" href="#usluge">Usluge</a>
+                <a class="text-slate-700 hover:text-slate-900" href="#o-uredu">O uredu</a>
                 <a class="text-slate-700 hover:text-slate-900" href="#kontakt">Kontakt</a>
             </nav>
 
@@ -66,6 +85,39 @@
                 </div>
             </div>
         </section>
+        <section id="o-uredu" class="mt-14">
+            <h2 class="text-2xl font-bold">O uredu</h2>
+
+            <div class="mt-6 grid gap-6 md:grid-cols-2">
+                <div class="rounded-2xl border border-slate-200 p-6">
+                    <p class="text-slate-700">
+                        Odvjetnički ured Krunoslava Aljinovića pruža pravnu pomoć i zastupanje
+                        u Splitu i okolici. Fokus je na jasnoj komunikaciji, diskreciji i
+                        učinkovitom rješavanju predmeta.
+                    </p>
+
+                    <p class="mt-4 text-slate-700">
+                        Prije preuzimanja predmeta definiramo cilj, opcije i procjenu rizika,
+                        kako biste znali što očekivati i koji su sljedeći koraci.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-6">
+                    <h3 class="font-semibold">Zašto klijenti biraju ovaj ured</h3>
+                    <ul class="mt-4 space-y-3 text-sm text-slate-700">
+                        <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-slate-900"></span>Diskrecija i
+                            individualan pristup</li>
+                        <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-slate-900"></span>Jasno
+                            objašnjenje opcija i rizika</li>
+                        <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-slate-900"></span>Praktična i
+                            provediva rješenja</li>
+                        <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-slate-900"></span>Po dogovoru i
+                            transparentno</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
 
         <section id="kontakt" class="mt-14">
             <h2 class="text-2xl font-bold">Kontakt</h2>
@@ -74,6 +126,12 @@
                 <p><b>Telefon:</b> <a class="underline" href="tel:+385XXXXXXXX">+385 …</a></p>
                 <p><b>Email:</b> <a class="underline" href="mailto:info@tvojadomena.hr">info@tvojadomena.hr</a></p>
             </div>
+            <div class="mt-6 overflow-hidden rounded-2xl border border-slate-200">
+                <iframe title="Lokacija – Split" src="https://www.google.com/maps?q=Split%2C%20Croatia&output=embed"
+                    class="h-80 w-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
         </section>
 
         <footer class="mt-14 border-t border-slate-200 pt-8 text-sm text-slate-500">

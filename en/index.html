@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 
+
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,6 +18,22 @@
             scroll-behavior: smooth;
         }
     </style>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LegalService",
+            "name": "Odvjetnički ured Krunoslav Aljinović",
+            "url": "https://example.com/",
+            "areaServed": "Split, Croatia",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Split",
+                "addressCountry": "HR"
+            },
+            "telephone": "+385XXXXXXXX",
+            "email": "info@example.com"
+        }
+    </script>
 </head>
 
 <body class="bg-white text-slate-900">
@@ -25,6 +43,7 @@
 
             <nav class="hidden gap-6 text-sm md:flex">
                 <a class="text-slate-700 hover:text-slate-900" href="#services">Services</a>
+                <a class="text-slate-700 hover:text-slate-900" href="#about">About</a>
                 <a class="text-slate-700 hover:text-slate-900" href="#contact">Contact</a>
             </nav>
 
@@ -66,6 +85,40 @@
                 </div>
             </div>
         </section>
+        <section id="about" class="mt-14">
+            <h2 class="text-2xl font-bold">About</h2>
+
+            <div class="mt-6 grid gap-6 md:grid-cols-2">
+                <div class="rounded-2xl border border-slate-200 p-6">
+                    <p class="text-slate-700">
+                        Law Office Krunoslav Aljinović provides legal assistance and representation
+                        in Split and the surrounding area. The focus is on clear communication,
+                        confidentiality and effective case handling.
+                    </p>
+
+                    <p class="mt-4 text-slate-700">
+                        Before taking on a matter, we define objectives, options and risk assessment
+                        so you know what to expect and what the next steps are.
+                    </p>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 p-6">
+                    <h3 class="font-semibold">Why clients choose this office</h3>
+                    <ul class="mt-4 space-y-3 text-sm text-slate-700">
+                        <li class="flex gap-3"><span
+                                class="mt-2 h-2 w-2 rounded-full bg-slate-900"></span>Confidentiality & individual
+                            approach</li>
+                        <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-slate-900"></span>Clear
+                            explanation of options and risks</li>
+                        <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-slate-900"></span>Practical,
+                            actionable solutions</li>
+                        <li class="flex gap-3"><span class="mt-2 h-2 w-2 rounded-full bg-slate-900"></span>Transparent
+                            process</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
 
         <section id="contact" class="mt-14">
             <h2 class="text-2xl font-bold">Contact</h2>
@@ -73,6 +126,11 @@
                 <p><b>City:</b> Split, Croatia</p>
                 <p><b>Phone:</b> <a class="underline" href="tel:+385XXXXXXXX">+385 …</a></p>
                 <p><b>Email:</b> <a class="underline" href="mailto:info@tvojadomena.hr">info@tvojadomena.hr</a></p>
+            </div>
+            <div class="mt-6 overflow-hidden rounded-2xl border border-slate-200">
+                <iframe title="Lokacija – Split" src="https://www.google.com/maps?q=Split%2C%20Croatia&output=embed"
+                    class="h-80 w-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
         </section>
 
