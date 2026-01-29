@@ -144,9 +144,16 @@
                     class="h-80 w-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-            <form name="kontakt" method="POST" data-netlify="true" class="mt-6 rounded-2xl border border-slate-200 p-6">
-                <input type="hidden" name="form-name" value="kontakt" />
+            <form action="https://formspree.io/f/xojwworg" method="POST"
+                class="mt-6 rounded-2xl border border-slate-200 p-6">
+                <input type="hidden" name="language" value="hr" />
+                <input type="hidden" name="_subject" value="New inquiry (HR) — Krunoslav Aljinović" />
+                <input type="hidden" name="_next" value="https://pinjamar.github.io/lawyer-site/thanks/" />
 
+                <!-- spam honeypot -->
+                <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+
+                <input type="hidden" name="form-name" value="kontakt" />
                 <div class="grid gap-4">
                     <div>
                         <label class="text-sm font-semibold">Ime i prezime</label>

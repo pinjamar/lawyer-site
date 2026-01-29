@@ -152,7 +152,13 @@
                     class="h-80 w-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-            <form name="contact" method="POST" data-netlify="true" class="mt-6 rounded-2xl border border-slate-200 p-6">
+            <form action="https://formspree.io/f/xojwworg" method="POST"
+                class="mt-6 rounded-2xl border border-slate-200 p-6">
+                <input type="hidden" name="language" value="en" />
+                <input type="hidden" name="_subject" value="New inquiry (EN) — Krunoslav Aljinović" />
+                <input type="hidden" name="_next" value="https://pinjamar.github.io/lawyer-site/en/thanks/" />
+                <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+
                 <input type="hidden" name="form-name" value="contact" />
 
                 <div class="grid gap-4">
