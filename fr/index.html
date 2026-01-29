@@ -39,6 +39,53 @@
             }
         }
     </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                    "@type": "Question",
+                    "name": "Comment prendre rendez-vous ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Vous pouvez prendre rendez-vous par téléphone ou par e-mail. Il est recommandé de décrire brièvement votre situation."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Quels documents apporter au premier rendez-vous ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Selon le dossier, apportez les contrats, courriers, documents judiciaires, pièces d’identité et preuves pertinentes."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Proposez-vous des consultations juridiques ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Oui. Une consultation est proposée selon le dossier, avec options possibles, évaluation des risques et prochaines étapes."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Combien coûtent les services juridiques ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Les honoraires dépendent du type et de la complexité du dossier. Une estimation est possible après un premier aperçu."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Travaillez-vous avec des clients hors de Split ou à l’étranger ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Oui. Sur accord, l’assistance peut être assurée à distance par e-mail ou téléphone selon la nature du dossier."
+                    }
+                }
+            ]
+        }
+    </script>
 </head>
 
 <body class="bg-white text-slate-900">
@@ -91,15 +138,37 @@
             <div class="mt-6 grid gap-4 md:grid-cols-3">
                 <div class="rounded-2xl border border-slate-200 p-5">
                     <h3 class="font-semibold">Droit civil</h3>
-                    <p class="mt-2 text-sm text-slate-700">Contrats, immobilier, dommages et intérêts.</p>
+                    <p class="mt-2 text-sm text-slate-700">
+                        Assistance juridique en matière de contrats, d’immobilier, de propriété et de créances.
+                        Représentation dans les litiges et rédaction/analyse de contrats avec un souci de sécurité
+                        juridique.
+                    </p>
+                    <p class="mt-3 text-xs text-slate-500">
+                        Exemples : contrats, transactions immobilières, dettes, dommages et intérêts, litiges de
+                        propriété.
+                    </p>
                 </div>
                 <div class="rounded-2xl border border-slate-200 p-5">
                     <h3 class="font-semibold">Droit de la famille</h3>
-                    <p class="mt-2 text-sm text-slate-700">Divorce, garde, pension alimentaire.</p>
+                    <p class="mt-2 text-sm text-slate-700">
+                        Conseil et représentation dans les affaires familiales avec une approche professionnelle et
+                        discrète.
+                        Accompagnement dans les dossiers impliquant enfants, pension alimentaire et biens des époux.
+                    </p>
+                    <p class="mt-3 text-xs text-slate-500">
+                        Exemples : divorce, garde, pension alimentaire, biens matrimoniaux, autorité parentale.
+                    </p>
                 </div>
                 <div class="rounded-2xl border border-slate-200 p-5">
                     <h3 class="font-semibold">Droit pénal</h3>
-                    <p class="mt-2 text-sm text-slate-700">Défense et représentation.</p>
+                    <p class="mt-2 text-sm text-slate-700">
+                        Défense et représentation dans les procédures pénales et contraventionnelles, avec stratégie et
+                        protection juridique.
+                        Assistance aux victimes et conseils avant toute déclaration ou démarche juridique.
+                    </p>
+                    <p class="mt-3 text-xs text-slate-500">
+                        Exemples : défense, représentation des victimes, contraventions, conseils avant procédure.
+                    </p>
                 </div>
             </div>
         </section>
@@ -195,8 +264,13 @@
                     </p>
                 </div>
             </form>
-
-
+            <div class="mt-6 rounded-2xl border border-slate-200 p-5 text-xs text-slate-600">
+                <p class="font-semibold text-slate-900">Avertissement</p>
+                <p class="mt-2">
+                    Ce site est fourni à titre informatif et ne constitue pas un conseil juridique.
+                    L’envoi d’une demande ne crée pas de relation avocat-client sans confirmation explicite.
+                </p>
+            </div>
         </section>
 
         <footer class="mt-14 border-t border-slate-200 pt-8 text-sm text-slate-500">
@@ -207,6 +281,20 @@
     <script>
         document.getElementById("y").textContent = new Date().getFullYear();
     </script>
+    <div class="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 backdrop-blur md:hidden">
+        <div class="mx-auto flex max-w-6xl gap-2 px-4 py-3">
+            <a href="tel:+385XXXXXXXX"
+                class="flex-1 rounded-xl bg-slate-900 px-4 py-3 text-center text-sm font-semibold text-white hover:bg-slate-800">
+                Appeler
+            </a>
+            <a href="mailto:info@tvojadomena.hr"
+                class="flex-1 rounded-xl border border-slate-200 px-4 py-3 text-center text-sm font-semibold text-slate-900 hover:bg-slate-50">
+                Email
+            </a>
+        </div>
+    </div>
+
+    <div class="h-20 md:hidden"></div>
 </body>
 
 </html>

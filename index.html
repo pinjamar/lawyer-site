@@ -39,6 +39,53 @@
             "email": "info@example.com"
         }
     </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                    "@type": "Question",
+                    "name": "Kako dogovoriti termin?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Termin se može dogovoriti telefonom ili e-mailom. Preporučuje se kratko opisati predmet radi lakše pripreme."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Koje dokumente trebam donijeti na prvi sastanak?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Korisno je ponijeti ugovore, dopise, sudsku dokumentaciju, osobne dokumente te relevantne dokaze vezane uz predmet."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Pružate li usluge pravnog savjetovanja?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Da, pruža se pravno savjetovanje uz objašnjenje mogućih opcija, procjenu rizika i preporuku sljedećih koraka."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Koliko koštaju odvjetničke usluge?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Trošak ovisi o vrsti i složenosti predmeta. Nakon uvida u osnovne informacije moguće je okvirno procijeniti opseg posla."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Radite li s klijentima izvan Splita ili iz inozemstva?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Da, po dogovoru je moguće pružiti pravnu pomoć i klijentima izvan Splita, uz komunikaciju e-mailom ili telefonom."
+                    }
+                }
+            ]
+        }
+    </script>
 </head>
 
 <body class="bg-white text-slate-900">
@@ -89,15 +136,38 @@
             <div class="mt-6 grid gap-4 md:grid-cols-3">
                 <div class="rounded-2xl border border-slate-200 p-5">
                     <h3 class="font-semibold">Građansko pravo</h3>
-                    <p class="mt-2 text-sm text-slate-700">Ugovori, nekretnine, odštete.</p>
+                    <p class="mt-2 text-sm text-slate-700">
+                        Pravna pomoć u pitanjima ugovornih odnosa, nekretnina, vlasništva i potraživanja.
+                        Zastupanje u sporovima i izrada/analiza ugovora uz naglasak na pravnu sigurnost i zaštitu
+                        interesa
+                        klijenta.
+                    </p>
+                    <p class="mt-3 text-xs text-slate-500">
+                        Primjeri: ugovori, kupoprodaja nekretnina, dugovi, naknada štete, vlasnički sporovi.
+                    </p>
                 </div>
                 <div class="rounded-2xl border border-slate-200 p-5">
                     <h3 class="font-semibold">Obiteljsko pravo</h3>
-                    <p class="mt-2 text-sm text-slate-700">Razvodi, skrbništvo, uzdržavanje.</p>
+                    <p class="mt-2 text-sm text-slate-700">
+                        Savjetovanje i zastupanje u obiteljskim postupcima, uz profesionalan i diskretan pristup.
+                        Pomoć pri dogovorima i postupcima koji uključuju djecu, uzdržavanje i imovinske odnose bračnih
+                        drugova.
+                    </p>
+                    <p class="mt-3 text-xs text-slate-500">
+                        Primjeri: razvod braka, skrbništvo, uzdržavanje, bračna stečevina, roditeljska skrb.
+                    </p>
                 </div>
                 <div class="rounded-2xl border border-slate-200 p-5">
                     <h3 class="font-semibold">Kazneno pravo</h3>
-                    <p class="mt-2 text-sm text-slate-700">Obrana i zastupanje.</p>
+                    <p class="mt-2 text-sm text-slate-700">
+                        Obrana i zastupanje u kaznenim i prekršajnim postupcima, uz pripremu strategije i pravnu zaštitu
+                        kroz cijeli postupak.
+                        Zastupanje oštećenika te savjetovanje prije davanja izjava i poduzimanja pravnih koraka.
+                    </p>
+                    <p class="mt-3 text-xs text-slate-500">
+                        Primjeri: obrana okrivljenika, zastupanje oštećenika, prekršaji, pravni savjeti prije postupka.
+                    </p>
+
                 </div>
             </div>
         </section>
@@ -251,6 +321,14 @@
                     </p>
                 </div>
             </form>
+            <div class="mt-6 rounded-2xl border border-slate-200 p-5 text-xs text-slate-600">
+                <p class="font-semibold text-slate-900">Napomena</p>
+                <p class="mt-2">
+                    Ova stranica je informativne prirode i ne predstavlja pravni savjet.
+                    Slanjem upita ne nastaje odvjetničko-klijentski odnos dok se izričito ne potvrdi preuzimanje
+                    predmeta.
+                </p>
+            </div>
 
         </section>
 
@@ -261,6 +339,23 @@
     <script>
         document.getElementById("y").textContent = new Date().getFullYear();
     </script>
+    <!-- Mobile sticky CTA -->
+    <div class="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 backdrop-blur md:hidden">
+        <div class="mx-auto flex max-w-6xl gap-2 px-4 py-3">
+            <a href="tel:+385XXXXXXXX"
+                class="flex-1 rounded-xl bg-slate-900 px-4 py-3 text-center text-sm font-semibold text-white hover:bg-slate-800">
+                Pozovi
+            </a>
+            <a href="mailto:info@tvojadomena.hr"
+                class="flex-1 rounded-xl border border-slate-200 px-4 py-3 text-center text-sm font-semibold text-slate-900 hover:bg-slate-50">
+                Email
+            </a>
+        </div>
+    </div>
+
+    <!-- Spacer so content isn't hidden behind sticky bar on mobile -->
+    <div class="h-20 md:hidden"></div>
+
 </body>
 
 </html>

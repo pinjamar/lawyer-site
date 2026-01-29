@@ -40,6 +40,53 @@
             "email": "info@example.com"
         }
     </script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                    "@type": "Question",
+                    "name": "How can I schedule an appointment?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "You can schedule an appointment by phone or email. It is recommended to briefly describe your matter for easier preparation."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What documents should I bring to the first meeting?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Depending on the case, bring contracts, correspondence, court documents, identification, and any relevant evidence."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you provide legal consultation?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. Legal consultation is provided based on the specifics of the case, including options, risk assessment, and next steps."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How much do legal services cost?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Fees depend on the type and complexity of the matter. After reviewing basic information, an estimate of scope can be provided."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you work with clients outside Split or abroad?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes. By appointment, legal assistance can be provided remotely via email or phone depending on the matter."
+                    }
+                }
+            ]
+        }
+    </script>
 </head>
 
 <body class="bg-white text-slate-900">
@@ -94,15 +141,39 @@
             <div class="mt-6 grid gap-4 md:grid-cols-3">
                 <div class="rounded-2xl border border-slate-200 p-5">
                     <h3 class="font-semibold">Civil Law</h3>
-                    <p class="mt-2 text-sm text-slate-700">Contracts, real estate, damages.</p>
+                    <p class="mt-2 text-sm text-slate-700">
+                        Legal assistance with contracts, real estate, property matters and claims.
+                        Representation in disputes and contract drafting/review with a focus on legal security and
+                        client protection.
+                    </p>
+                    <p class="mt-3 text-xs text-slate-500">
+                        Examples: contracts, real estate transactions, debt claims, damages, property disputes.
+                    </p>
+
                 </div>
                 <div class="rounded-2xl border border-slate-200 p-5">
                     <h3 class="font-semibold">Family Law</h3>
-                    <p class="mt-2 text-sm text-slate-700">Divorce, custody, alimony.</p>
+                    <p class="mt-2 text-sm text-slate-700">
+                        Consultation and representation in family matters with a professional and discreet approach.
+                        Support in cases involving children, alimony, and marital property arrangements.
+                    </p>
+                    <p class="mt-3 text-xs text-slate-500">
+                        Examples: divorce, custody, child support, marital property, parental rights.
+                    </p>
+
                 </div>
                 <div class="rounded-2xl border border-slate-200 p-5">
                     <h3 class="font-semibold">Criminal Law</h3>
-                    <p class="mt-2 text-sm text-slate-700">Defense and representation.</p>
+                    <p class="mt-2 text-sm text-slate-700">
+                        Defense and representation in criminal and misdemeanor proceedings, including case strategy and
+                        legal
+                        protection.
+                        Assistance for injured parties and legal guidance before giving statements or taking legal
+                        steps.
+                    </p>
+                    <p class="mt-3 text-xs text-slate-500">
+                        Examples: defense, victim representation, misdemeanors, pre-proceeding legal advice.
+                    </p>
                 </div>
             </div>
         </section>
@@ -200,57 +271,53 @@
             </div>
         </section>
         <section id="faq" class="mt-14">
-            <h2 class="text-2xl font-bold">Questions fréquentes (FAQ)</h2>
+            <h2 class="text-2xl font-bold">Frequently Asked Questions (FAQ)</h2>
             <p class="mt-3 text-slate-700">
-                Réponses aux questions les plus fréquentes concernant l’assistance juridique et la représentation à
-                Split, Croatie.
+                Answers to common questions related to legal services and representation in Split, Croatia.
             </p>
-
             <div class="mt-6 space-y-4">
                 <details class="rounded-2xl border border-slate-200 p-5">
-                    <summary class="cursor-pointer font-semibold">Comment prendre rendez-vous ?</summary>
+                    <summary class="cursor-pointer font-semibold">How can I schedule an appointment?</summary>
                     <p class="mt-3 text-sm text-slate-700">
-                        Vous pouvez prendre rendez-vous par téléphone ou par e-mail. Il est recommandé de décrire
-                        brièvement votre
-                        situation afin de proposer le meilleur créneau et la préparation nécessaire.
+                        You can schedule an appointment by phone or email. It is recommended to briefly describe your
+                        matter so we can
+                        suggest the most suitable time and preparation.
                     </p>
                 </details>
 
                 <details class="rounded-2xl border border-slate-200 p-5">
-                    <summary class="cursor-pointer font-semibold">Quels documents apporter au premier rendez-vous ?
+                    <summary class="cursor-pointer font-semibold">What documents should I bring to the first meeting?
                     </summary>
                     <p class="mt-3 text-sm text-slate-700">
-                        Selon le dossier, il est utile d’apporter les contrats, courriers, documents judiciaires, pièces
-                        d’identité et
-                        toute communication ou preuve pertinente liée à l’affaire.
+                        Depending on the case, it is useful to bring contracts, correspondence, court documents,
+                        identification, and any
+                        relevant communication or evidence related to the matter.
                     </p>
                 </details>
 
                 <details class="rounded-2xl border border-slate-200 p-5">
-                    <summary class="cursor-pointer font-semibold">Proposez-vous des consultations juridiques ?</summary>
+                    <summary class="cursor-pointer font-semibold">Do you provide legal consultation?</summary>
                     <p class="mt-3 text-sm text-slate-700">
-                        Oui. La consultation juridique est proposée en fonction des circonstances du dossier, avec une
-                        explication des
-                        options possibles, une évaluation des risques et des recommandations pour la suite.
+                        Yes. Legal consultation is provided based on the specific circumstances of the case, including
+                        available options,
+                        risk assessment, and recommended next steps.
                     </p>
                 </details>
-
                 <details class="rounded-2xl border border-slate-200 p-5">
-                    <summary class="cursor-pointer font-semibold">Combien coûtent les services juridiques ?</summary>
+                    <summary class="cursor-pointer font-semibold">How much do legal services cost?</summary>
                     <p class="mt-3 text-sm text-slate-700">
-                        Les honoraires dépendent du type et de la complexité du dossier. Après un premier aperçu, il est
-                        possible de
-                        donner une estimation du travail et du mode de facturation.
+                        Fees depend on the type and complexity of the matter. After reviewing basic information, we can
+                        provide an
+                        estimate of scope and the fee structure.
                     </p>
                 </details>
-
                 <details class="rounded-2xl border border-slate-200 p-5">
-                    <summary class="cursor-pointer font-semibold">Travaillez-vous avec des clients hors de Split ou à
-                        l’étranger ?</summary>
+                    <summary class="cursor-pointer font-semibold">Do you work with clients outside Split or abroad?
+                    </summary>
                     <p class="mt-3 text-sm text-slate-700">
-                        Oui. Sur accord, une assistance juridique peut être assurée pour des clients en dehors de Split,
-                        y compris par
-                        e-mail ou téléphone selon la nature du dossier.
+                        Yes. By appointment, it is possible to provide legal assistance to clients outside Split,
+                        including communication
+                        by email or phone depending on the matter.
                     </p>
                 </details>
             </div>
@@ -315,6 +382,13 @@
                     </p>
                 </div>
             </form>
+            <div class="mt-6 rounded-2xl border border-slate-200 p-5 text-xs text-slate-600">
+                <p class="font-semibold text-slate-900">Disclaimer</p>
+                <p class="mt-2">
+                    This website is for informational purposes only and does not constitute legal advice.
+                    Submitting an inquiry does not create an attorney-client relationship unless explicitly confirmed.
+                </p>
+            </div>
 
         </section>
         <footer class="mt-14 border-t border-slate-200 pt-8 text-sm text-slate-500">
@@ -325,6 +399,21 @@
     <script>
         document.getElementById("y").textContent = new Date().getFullYear();
     </script>
+    <div class="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/95 backdrop-blur md:hidden">
+        <div class="mx-auto flex max-w-6xl gap-2 px-4 py-3">
+            <a href="tel:+385XXXXXXXX"
+                class="flex-1 rounded-xl bg-slate-900 px-4 py-3 text-center text-sm font-semibold text-white hover:bg-slate-800">
+                Call
+            </a>
+            <a href="mailto:info@tvojadomena.hr"
+                class="flex-1 rounded-xl border border-slate-200 px-4 py-3 text-center text-sm font-semibold text-slate-900 hover:bg-slate-50">
+                Email
+            </a>
+        </div>
+    </div>
+
+    <div class="h-20 md:hidden"></div>
+
 </body>
 
 </html>
