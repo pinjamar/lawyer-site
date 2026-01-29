@@ -1,9 +1,13 @@
 <!doctype html>
 <html lang="hr">
 
-
-
 <head>
+    <link rel="canonical" href="https://pinjamar.github.io/lawyer-site" />
+    <link rel="alternate" hreflang="hr" href="https://pinjamar.github.io/lawyer-site" />
+    <link rel="alternate" hreflang="en" href="hhttps://pinjamar.github.io/lawyer-site/en" />
+    <link rel="alternate" hreflang="fr" href="https://pinjamar.github.io/lawyer-site/fr/" />
+    <link rel="alternate" hreflang="x-default" href="https://pinjamar.github.io/lawyer-site" />
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -48,8 +52,19 @@
             </nav>
 
             <div class="flex items-center gap-2">
+                <a href="./" class="rounded-xl bg-blue-600 px-3 py-2 text-xs font-semibold text-white">
+                    HR
+                </a>
+
                 <a href="./en/"
-                    class="rounded-xl border border-slate-200 px-3 py-2 text-xs font-medium hover:bg-slate-50">EN</a>
+                    class="rounded-xl border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50">
+                    EN
+                </a>
+
+                <a href="./fr/"
+                    class="rounded-xl border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50">
+                    FR
+                </a>
                 <a href="#kontakt"
                     class="rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-800">
                     Kontakt
@@ -67,7 +82,6 @@
                 Pružam stručnu pravnu pomoć i zastupanje u Splitu i okolici.
             </p>
         </section>
-
         <section id="usluge" class="mt-14">
             <h2 class="text-2xl font-bold">Usluge</h2>
             <div class="mt-6 grid gap-4 md:grid-cols-3">
@@ -101,7 +115,6 @@
                         kako biste znali što očekivati i koji su sljedeći koraci.
                     </p>
                 </div>
-
                 <div class="rounded-2xl border border-slate-200 p-6">
                     <h3 class="font-semibold">Zašto klijenti biraju ovaj ured</h3>
                     <ul class="mt-4 space-y-3 text-sm text-slate-700">
@@ -117,8 +130,6 @@
                 </div>
             </div>
         </section>
-
-
         <section id="kontakt" class="mt-14">
             <h2 class="text-2xl font-bold">Kontakt</h2>
             <div class="mt-4 rounded-2xl border border-slate-200 p-5 text-sm text-slate-700">
@@ -126,11 +137,57 @@
                 <p><b>Telefon:</b> <a class="underline" href="tel:+385XXXXXXXX">+385 …</a></p>
                 <p><b>Email:</b> <a class="underline" href="mailto:info@tvojadomena.hr">info@tvojadomena.hr</a></p>
             </div>
+
+
             <div class="mt-6 overflow-hidden rounded-2xl border border-slate-200">
                 <iframe title="Lokacija – Split" src="https://www.google.com/maps?q=Split%2C%20Croatia&output=embed"
                     class="h-80 w-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
+            <form name="kontakt" method="POST" data-netlify="true" class="mt-6 rounded-2xl border border-slate-200 p-6">
+                <input type="hidden" name="form-name" value="kontakt" />
+
+                <div class="grid gap-4">
+                    <div>
+                        <label class="text-sm font-semibold">Ime i prezime</label>
+                        <input name="name" required class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3"
+                            placeholder="Vaše ime" />
+                    </div>
+
+                    <div class="grid gap-4 md:grid-cols-2">
+                        <div>
+                            <label class="text-sm font-semibold">Email</label>
+                            <input name="email" type="email" required
+                                class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3"
+                                placeholder="vas@email.com" />
+                        </div>
+                        <div>
+                            <label class="text-sm font-semibold">Telefon (opcionalno)</label>
+                            <input name="phone" class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3"
+                                placeholder="+385 ..." />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="text-sm font-semibold">Poruka</label>
+                        <textarea name="message" required rows="5"
+                            class="mt-2 w-full rounded-xl border border-slate-200 px-4 py-3"
+                            placeholder="Ukratko opišite upit..."></textarea>
+                    </div>
+
+                    <button
+                        class="rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-800"
+                        type="submit">
+                        Pošalji upit
+                    </button>
+
+                    <p class="text-xs text-slate-500">
+                        *Slanjem upita pristajete da vas kontaktiramo u vezi vašeg upita. Ova stranica je
+                        informativna i
+                        ne predstavlja pravni savjet.
+                    </p>
+                </div>
+            </form>
 
         </section>
 
@@ -138,7 +195,6 @@
             © <span id="y"></span> Krunoslav Aljinović — Odvjetnik, Split
         </footer>
     </main>
-
     <script>
         document.getElementById("y").textContent = new Date().getFullYear();
     </script>
