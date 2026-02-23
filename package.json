@@ -1,0 +1,7 @@
+{
+  "name": "lawyer-site",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx serve . --listen 3000"
+  }
+}
