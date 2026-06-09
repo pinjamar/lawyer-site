@@ -1,0 +1,44 @@
+DEPLOYMENT TODO
+===============
+
+STEP 1 — You (get Cloudflare nameservers)
+- Go to cloudflare.com dashboard → Add a site
+- Enter: krunoaljinovic.hr → Free plan → Continue
+- Skip/confirm DNS scan
+- On the final step Cloudflare shows you 2 nameservers (e.g. aria.ns.cloudflare.com, bob.ns.cloudflare.com)
+- Copy them and send to client
+
+STEP 2 — Client (change nameservers at domena.hr)
+- Log in to domena.hr → Moje domene → krunoaljinovic.hr → Nameserveri
+- Replace existing nameservers with the two you sent
+- Save
+- Wait ~1-6 hours for propagation
+
+STEP 3 — You (deploy to Cloudflare Pages)
+- Cloudflare dashboard → Pages → Create project
+- Connect GitHub repo with the lawyer-site
+- Build command: (leave empty)
+- Output directory: /
+- Deploy
+
+STEP 4 — You (wire the domain)
+- In the Pages project → Custom Domains
+- Add krunoaljinovic.hr and www.krunoaljinovic.hr
+- Cloudflare creates DNS records automatically
+- SSL certificate provisions within minutes
+
+STEP 5 — You (swap placeholder URLs in the site)
+- Find and replace all occurrences of: pinjamar.github.io/lawyer-site/
+- Replace with: krunoaljinovic.hr
+- Files to update: index.html, en/index.html, fr/index.html, sitemap.xml
+  (canonical, hreflang, JSON-LD sameAs/url fields)
+
+STEP 6 — You (verify Formspree)
+- All 3 contact forms already point to: https://formspree.io/f/xojwworg
+- Log in to formspree.io and confirm that endpoint is in your account
+- Once site is live, submit a test message from krunoaljinovic.hr
+- Check that the submission arrives at the correct email
+- Optional: in Formspree dashboard → Form settings → add krunoaljinovic.hr to allowed domains
+  (prevents spam submissions from other origins)
+
+DONE — site is live at krunoaljinovic.hr

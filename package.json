@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "npx serve . --listen 3000"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
   }
 }
