@@ -1,44 +1,38 @@
 DEPLOYMENT TODO
 ===============
+Domain: odvjetnik-aljinovic.hr
 
-STEP 1 — You (get Cloudflare nameservers)
-- Go to cloudflare.com dashboard → Add a site
-- Enter: krunoaljinovic.hr → Free plan → Continue
-- Skip/confirm DNS scan
-- On the final step Cloudflare shows you 2 nameservers (e.g. aria.ns.cloudflare.com, bob.ns.cloudflare.com)
-- Copy them and send to client
+STEP 1 — You (add site to Cloudflare) ✅ DONE
+- Nameservers: malavika.ns.cloudflare.com / vicente.ns.cloudflare.com
 
-STEP 2 — Client (change nameservers at domena.hr)
-- Log in to domena.hr → Moje domene → krunoaljinovic.hr → Nameserveri
-- Replace existing nameservers with the two you sent
-- Save
-- Wait ~1-6 hours for propagation
+STEP 2 — Client (change nameservers at domena.hr) ✅ DONE
+- Domain is now proxying through Cloudflare, SSL active
 
-STEP 3 — You (deploy to Cloudflare Pages)
-- Cloudflare dashboard → Pages → Create project
-- Connect GitHub repo with the lawyer-site
-- Build command: (leave empty)
-- Output directory: /
-- Deploy
+STEP 3 — You (deploy to Cloudflare Workers) ✅ DONE
 
-STEP 4 — You (wire the domain)
-- In the Pages project → Custom Domains
-- Add krunoaljinovic.hr and www.krunoaljinovic.hr
-- Cloudflare creates DNS records automatically
-- SSL certificate provisions within minutes
+STEP 4 — You (wire the domain) ✅ DONE
+- odvjetnik-aljinovic.hr and www.odvjetnik-aljinovic.hr both active
 
-STEP 5 — You (swap placeholder URLs in the site)
-- Find and replace all occurrences of: pinjamar.github.io/lawyer-site/
-- Replace with: krunoaljinovic.hr
-- Files to update: index.html, en/index.html, fr/index.html, sitemap.xml
-  (canonical, hreflang, JSON-LD sameAs/url fields)
+STEP 5 — You (swap placeholder URLs in the site) ✅ DONE
+- All occurrences replaced in index.html, en/index.html, fr/index.html, sitemap.xml
 
-STEP 6 — You (verify Formspree)
-- All 3 contact forms already point to: https://formspree.io/f/xojwworg
-- Log in to formspree.io and confirm that endpoint is in your account
-- Once site is live, submit a test message from krunoaljinovic.hr
-- Check that the submission arrives at the correct email
-- Optional: in Formspree dashboard → Form settings → add krunoaljinovic.hr to allowed domains
-  (prevents spam submissions from other origins)
+STEP 6 — You (Formspree email)
+- Formspree dashboard → form xojwworg → Workflow → + Add New → Actions → Email
+- Set recipient to client's email so submissions go to them, not you
+- Submit a test message from odvjetnik-aljinovic.hr to confirm delivery
 
-DONE — site is live at krunoaljinovic.hr
+STEP 7 — You (Google Search Console)
+- Go to https://search.google.com/search-console
+- Add property → URL prefix → https://www.odvjetnik-aljinovic.hr/
+- Verify via HTML meta tag (already in all 3 pages: google-site-verification tag)
+  → just click Verify, the tag is already deployed
+- After verification: Sitemaps → add https://www.odvjetnik-aljinovic.hr/sitemap.xml
+- Request indexing on the 3 main URLs manually via URL Inspection tool
+
+STEP 8 — You (post-launch checks)
+- Open all 3 language versions on mobile and desktop
+- Submit the contact form on each language page → confirm email arrives at client
+- Check that language switcher works correctly on the live domain
+- Check robots.txt is accessible: https://www.odvjetnik-aljinovic.hr/robots.txt
+
+DONE — site is live at odvjetnik-aljinovic.hr
